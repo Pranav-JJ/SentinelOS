@@ -1,1 +1,1 @@
-# SIH_OS-Hardening
+# SIH_OS-Hardening-GUI
