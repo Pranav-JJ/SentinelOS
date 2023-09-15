@@ -2,31 +2,62 @@ import tkinter as tk
 import customtkinter as ctk
 import tkinter.messagebox as tkmb
 import subprocess
+import webbrowser
+from PIL import Image
 
 ctk.set_appearance_mode("System")
-ctk.set_default_color_theme("Code/yellow.json")
+ctk.set_default_color_theme("./yellow.json")
+
+icon_image = ctk.CTkImage(
+    light_image=Image.open("./sentinelOS1.png"),
+    dark_image=Image.open("./sentinelOS1.png"),
+    size=(250, 50)
+)
 
 class App(ctk.CTk):
+    def open_documentation_link(self):
+        webbrowser.open("https://customtkinter.tomschimansky.com/documentation/")
+
+    def open_presentation_link(self):
+        webbrowser.open("https://www.canva.com/design/DAFuQi7Jy-M/ocMNFOlBoO7o0HNuEa2FnA/edit")
+
+    def open_github_repo_link(self):
+        webbrowser.open("https://github.com/Pranav-JJ/SentinelOS")
+
+    def sidebar_button_event(self, button_text):
+        if button_text == "Documentation":
+            self.open_documentation_link()
+        elif button_text == "Presentation":
+            self.open_presentation_link()
+        elif button_text == "Github Repo":
+            self.open_github_repo_link()
+        else:
+            print("")
+
     def __init__(self):
         super().__init__()
 
-        self.title("CustomTkinter Security Configuration")
+        self.title("SentinelOS Security Configuration")
         self.geometry(f"{1100}x{580}")
 
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
 
+
         self.sidebar_frame = ctk.CTkFrame(self, width=140, corner_radius=0)
         self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
         self.sidebar_frame.grid_rowconfigure(4, weight=1)
-        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="SentinelOS", font=ctk.CTkFont(size=20, weight="bold"))
+        # self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="SentinelOS", font=ctk.CTkFont(size=20, weight="bold"))
+        # self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
+        self.logo_label = ctk.CTkLabel(self.sidebar_frame, text="", image=icon_image)
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
-        self.sidebar_button_1 = ctk.CTkButton(self.sidebar_frame, text = "Documentation", command=self.sidebar_button_event)
+
+        self.sidebar_button_1 = ctk.CTkButton(self.sidebar_frame, text = "Documentation", command=self.open_documentation_link)
         self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=10)
-        self.sidebar_button_2 = ctk.CTkButton(self.sidebar_frame, text = "Github Repo", command=self.sidebar_button_event)
+        self.sidebar_button_2 = ctk.CTkButton(self.sidebar_frame, text = "Github Repo", command=self.open_github_repo_link)
         self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=10)
-        self.sidebar_button_3 = ctk.CTkButton(self.sidebar_frame, text = "Presentation", command=self.sidebar_button_event)
+        self.sidebar_button_3 = ctk.CTkButton(self.sidebar_frame, text = "Presentation", command=self.open_presentation_link)
         self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=10)
         self.appearance_mode_label = ctk.CTkLabel(self.sidebar_frame, text="Appearance Mode:", anchor="w")
         self.appearance_mode_label.grid(row=5, column=0, padx=20, pady=(10, 0))
@@ -135,7 +166,7 @@ def open_upper_gui():
     app.mainloop()
 
 ctk.set_appearance_mode("dark")
-ctk.set_default_color_theme("Code/yellow.json")
+ctk.set_default_color_theme("./yellow.json")
 
 def login():
     username = "admin"
