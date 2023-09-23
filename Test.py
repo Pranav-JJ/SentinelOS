@@ -163,6 +163,7 @@ class App(ctk.CTk):
 
 def open_upper_gui():
     app = App()
+    app.wm_iconbitmap("sentinelIcon.ico")
     app.mainloop()
 
 ctk.set_appearance_mode("dark")
@@ -184,6 +185,7 @@ def login():
         tkmb.showerror(title="Login Failed", message="Invalid Username and password")
 
 root = ctk.CTk()
+root.wm_iconbitmap("sentinelIcon.ico")
 root.geometry("400x400")
 root.title("Trial Admin Login GUI")
 
