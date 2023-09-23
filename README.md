@@ -1,6 +1,6 @@
 # SentinelOS
 
-![SentinelOS Logo](sentinelos-logo.png)
+![SentinelOS Logo](sentinelOS1.png)
 
 ## Table of Contents
 
