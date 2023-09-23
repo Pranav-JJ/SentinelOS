@@ -1,6 +1,7 @@
 # SentinelOS
 
-![SentinelOS Logo](sentinelOS1.png)
+![SentinelOS Logo](https://github.com/Pranav-JJ/SentinelOS/assets/109146414/732efa07-bd12-4fd4-a209-5bf8ab7c498f)
+
 
 ## Table of Contents
 
