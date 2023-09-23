@@ -13,7 +13,7 @@
 
 ## Introduction
 
-Welcome to SentinelOS, your one-stop solution for hardening your Ubuntu system's security. SentinelOS is a project developed for the Smart India Hackathon, aimed at enhancing the security of Ubuntu-based operating systems. With SentinelOS, you can bolster the security of your system, protecting it from various cyber threats and vulnerabilities.
+Welcome to SentinelOS, your one-stop solution for hardening your Ubuntu system's security. SentinelOS is a project developed for the Smart India Hackathon, aimed at enhancing the security also known as OS Hardening of Ubuntu-based operating systems. With SentinelOS, you can bolster the security of your system, protecting it from various cyber threats and vulnerabilities.
 
 In today's digital age, security is of paramount importance, and Ubuntu is no exception. SentinelOS provides a suite of tools and configurations to ensure that your Ubuntu system is as secure as possible. Whether you're a seasoned Linux user or just starting with Ubuntu, SentinelOS makes it easy to enhance your system's security posture.
 
@@ -21,13 +21,13 @@ In today's digital age, security is of paramount importance, and Ubuntu is no ex
 
 - **Easy Installation**: SentinelOS can be easily installed on your Ubuntu system with minimal configuration.
 
-- **Automated Hardening**: It automates the process of hardening your Ubuntu system by applying best practices and security configurations.
+- **Automated Hardening**: It automates the process of hardening your Ubuntu system by applying the best practices and security configurations.
 
-- **Vulnerability Scanning**: SentinelOS performs vulnerability scans and suggests remediation actions to mitigate potential security risks.
+- **Vulnerability Testing**: SentinelOS performs vulnerability scans and suggests remediation actions to mitigate potential security risks.
 
 - **Firewall Configuration**: It helps you set up and manage your firewall rules to protect your system from unauthorized access.
 
-- **Real-time Monitoring**: SentinelOS provides real-time monitoring of system logs and alerts you to suspicious activities.
+- **Creation of Security Logs**: SentinelOS logs the outcome of each option chosen by user and alerts user about suspicious activities.
 
 - **Security Updates**: It ensures that your system is up-to-date with the latest security patches and updates.
 
@@ -38,7 +38,7 @@ Follow these steps to get started with SentinelOS:
 1. Clone the SentinelOS repository to your Ubuntu system:
 
    ```bash
-   git clone https://github.com/your-username/SentinelOS.git
+   git clone https://github.com/Pranav-JJ/SentinelOS.git
    ```
 
 2. Navigate to the SentinelOS directory:
@@ -53,15 +53,17 @@ Follow these steps to get started with SentinelOS:
 
 ## Usage
 
-Once installed, SentinelOS offers a command-line interface for managing and monitoring your system's security. Here are some common commands:
+Once installed, SentinelOS offers a GUI interface for managing and monitoring your system's security. Here are some common options (till a WIP):
 
-- `sentinelos scan`: Perform a vulnerability scan and get recommendations for improving security.
+- `sentinelos file-system configuration`: Provides user the option to add files to run a integrity scan in a database and run file and directory integrity scans.
 
-- `sentinelos firewall`: Manage your system's firewall rules.
+- `sentinelos secure boot settings`: Allow admin to set permissions for users for accessing files and system commands.
 
-- `sentinelos logs`: View real-time system logs and security alerts.
+- `sentinelos system updates`: Check for and apply security updates.
 
-- `sentinelos update`: Check for and apply security updates.
+- `sentinelos network security/firewall config`: Manage your system's firewall rules.
+
+- `sentinelos logs`: View system logs and security alerts.
 
 For detailed usage instructions and options, refer to the [SentinelOS Documentation](docs/README.md).
 
