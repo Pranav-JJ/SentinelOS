@@ -73,7 +73,7 @@ We welcome contributions to SentinelOS from the open-source community. If you'd 
 
 ## License
 
-SentinelOS is open-source software released under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
+SentinelOS is open-source software released under the [GNU General Public License Version 3](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
 
 ---
 
