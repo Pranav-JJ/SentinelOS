@@ -78,3 +78,5 @@ SentinelOS is open-source software released under the [GNU General Public Licens
 ---
 
 Thank you for choosing SentinelOS to enhance the security of your Ubuntu system. We hope this project helps you keep your system safe and secure. If you have any questions or encounter any issues, please don't hesitate to [open an issue](https://github.com/Pranav-JJ/SentinelOS/issues).
+
+[UPDATE] Currently, the project is under development by another team. However, if you wish to use the GUI for your own purposes, it can be now accessed through this repository.
